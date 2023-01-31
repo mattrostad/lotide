@@ -8,12 +8,13 @@ const assertEqual = function(actual, expected) {
 };
 
 function tail(array){
-  return array[2]
+  return array.slice(1)
 }
 
 // TEST CODE
 
 
-
-assertEqual(tail([5,6,7]), 7)
-assertEqual(tail([10,11,12]), 12)
+const result1 = tail([5,6,7])
+assertEqual(result1[0], 6) 
+assertEqual(result1[1], 7) 
+assertEqual(result1.length, 2) 
