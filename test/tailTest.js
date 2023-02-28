@@ -1,7 +1,12 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const result1 = tail([5,6,7])
-assertEqual(result1[0], 6) 
-assertEqual(result1[1], 7) 
-assertEqual(result1.length, 2) 
+
+describe("#tail", () => {
+  it("returns 3 for [1, 2, 3]", () => {
+    assert.strictEqual(tail([1, 2, 3]), 3);
+  });
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(tail(['5']), '5'); 
+  });
+});
