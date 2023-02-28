@@ -12,4 +12,4 @@ const countLetters = function(string) {
   return result;
 };
 
-console.log(countLetters('LHL'))
+module.exports = countLetters

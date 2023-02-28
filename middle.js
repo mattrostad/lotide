@@ -1,20 +1,10 @@
-const eqArrays = require('./eqArrays');
-const assertArraysEqual = require('./assertArraysEqual')
-
-const middle = function(array) {
-  const returnArray = [];
-
-  if (array.length > 2) {
-    let middle = array.length / 2 - 1;
-    if (array.length % 2 !== 0) {
-      //console.log(middle);
-      returnArray.push((array[Math.ceil(middle)]));
-    } else {
-      returnArray.push(array[middle], array[middle + 1]);
-    }
-    return returnArray;
+const middle = function (array) {
+  if (array.length < 2) {
+    return array[0];
+  } else if (array.length % 2 !== 0) {
+    return array[Math.floor(array.length / 2)];
   } else {
-    return [];
+    return array[(array.length / 2) -1];
   }
 };
 
