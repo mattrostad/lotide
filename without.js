@@ -9,4 +9,6 @@ const without = function(source, itemsToRemove) {
   return source;
 };
 
+console.log(without([2,3], [2]));
+
 module.exports = without;

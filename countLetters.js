@@ -12,4 +12,4 @@ const countLetters = function(string) {
   return result;
 };
 
-module.exports = countLetters
+module.exports = countLetters 

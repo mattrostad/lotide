@@ -1,6 +1,6 @@
-const eqArrays = require('./eqArrays');
+const eqArrays = require("./eqArrays");
 
-const eqObjects = function(object1, object2) {
+const eqObjects = function (object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   } else {
@@ -17,4 +17,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-module.exports = eqObjects
+module.exports = eqObjects;

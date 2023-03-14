@@ -1,4 +1,4 @@
-const findKey = function(object, callback) {
+const findKey = function (object, callback) {
   for (const key in object) {
     if (callback(object[key])) {
       return key;
@@ -6,4 +6,4 @@ const findKey = function(object, callback) {
   }
 };
 
-module.exports = findKey
+module.exports = findKey;

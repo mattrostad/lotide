@@ -1,4 +1,10 @@
 const tail = function(array) {
-  return array.pop()
-}
-module.exports = tail;
+  const result = [];
+  for (let i = 1; i < array.length; i++) {
+    result.push(array[i]);
+  }
+  console.log(result);
+  return result;
+};
+
+module.exports = tail
